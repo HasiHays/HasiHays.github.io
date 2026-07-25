@@ -17,7 +17,8 @@ const titles = [
     'Graph Neural Networks',
     'Foundation Models & LLMs',
     'Precision Medicine',
-    'Drug Discovery'
+    'Drug Discovery',
+    'Computational Neuroscience'
 ];
 
 let titleIndex = 0;
