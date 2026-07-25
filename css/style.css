@@ -955,7 +955,6 @@ img {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
-    padding: 24px;
     transition: var(--transition);
 }
 
@@ -963,6 +962,18 @@ img {
     transform: translateY(-5px);
     border-color: rgba(108, 99, 255, 0.4);
     box-shadow: var(--shadow-glow);
+}
+
+.repo-card-link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+    padding-bottom: 0;
+}
+
+.repo-card-link:hover {
+    text-decoration: none;
 }
 
 .repo-card.featured {
@@ -1019,6 +1030,9 @@ img {
     align-items: center;
     color: var(--text-muted);
     font-size: 0.85rem;
+    padding: 12px 24px;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
 }
 
 .repo-footer span:first-child {
@@ -1031,13 +1045,29 @@ img {
     color: #FFD700;
 }
 
-.repo-footer .fa-arrow-right {
-    color: var(--primary);
+.repo-paper-link {
+    color: var(--text-muted);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-full);
+    background: rgba(108, 99, 255, 0.1);
+}
+
+.repo-paper-link:hover {
+    color: white;
+    background: var(--primary);
+}
+
+.repo-paper-link .fa-arrow-right {
     transition: var(--transition);
 }
 
-.repo-card:hover .fa-arrow-right {
-    transform: translateX(5px);
+.repo-card:hover .repo-paper-link .fa-arrow-right {
+    transform: translateX(3px);
 }
 
 /* ===== Publications ===== */
